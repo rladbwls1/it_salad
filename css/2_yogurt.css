@@ -1,0 +1,259 @@
+section {
+  position: relative;
+  top: 300px;
+  margin-bottom: 350px;
+}
+
+section > p {
+  letter-spacing: 8px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#itemwrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  justify-content: space-between;
+  margin: 1rem 4rem;
+}
+img {
+  width: 350px;
+  height: 350px;
+}
+.img {
+  margin: 0 2rem 3.5rem;
+}
+.name {
+  text-align: center;
+  font-size: 17px;
+  font-weight: 500;
+  width: 350px;
+  height: auto;
+  margin-bottom: 30px;
+}
+.item {
+  width: 350px;
+  overflow: hidden;
+  font-size: 14px;
+  background-color: rgba(255, 255, 255, 0.604);
+}
+
+.item span {
+  font-weight: bold;
+}
+
+#one,
+#two,
+#three {
+  width: 350px;
+  height: 350px;
+  position: relative;
+}
+
+#hover1,
+#hover2,
+#hover3 {
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  height: 0;
+  transition: all 1s;
+}
+
+.text {
+  width: 350px;
+  overflow: hidden;
+  text-align: center;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+#item1:hover + #hover1 {
+  height: 30%;
+}
+#item2:hover + #hover2 {
+  height: 40%;
+}
+#item3:hover + #hover3 {
+  height: 40%;
+}
+
+@media screen and (max-width: 810px) {
+  .footer {
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 875px) {
+  #bar {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  #bar ul a {
+    margin: 8px 5rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  footer {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  #search,
+  #search_text {
+    opacity: 0;
+  }
+
+  #search_group,
+  input[type='text'] {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1338px) {
+  #itemwrap img {
+    width: 500px;
+    height: 500px;
+  }
+
+  #itemwrap #one {
+    width: 500px;
+    height: 500px;
+  }
+
+  #itemwrap #two {
+    width: 500px;
+    height: 500px;
+  }
+
+  #itemwrap #three {
+    width: 500px;
+    height: 500px;
+  }
+
+  #itemwrap #four {
+    width: 500px;
+    height: 500px;
+  }
+
+  #itemwrap #five {
+    width: 500px;
+    height: 500px;
+  }
+
+  #itemwrap #six {
+    width: 500px;
+    height: 500px;
+  }
+
+  #itemwrap #seven {
+    width: 500px;
+    height: 500px;
+  }
+
+  #itemwrap #eight {
+    width: 500px;
+    height: 500px;
+  }
+
+  #itemwrap #nine {
+    width: 500px;
+    height: 500px;
+  }
+
+  #itemwrap .item {
+    width: 500px;
+  }
+
+  #itemwrap .text {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  section #itemwrap {
+    display: flex;
+    justify-content: center;
+  }
+
+  #itemwrap img {
+    width: 600px;
+    height: 600px;
+  }
+
+  #itemwrap #one {
+    width: 600px;
+    height: 600px;
+  }
+
+  #itemwrap #two {
+    width: 600px;
+    height: 600px;
+  }
+
+  #itemwrap #three {
+    width: 600px;
+    height: 600px;
+  }
+
+  #itemwrap #four {
+    width: 600px;
+    height: 600px;
+  }
+
+  #itemwrap #five {
+    width: 600px;
+    height: 600px;
+  }
+
+  #itemwrap #six {
+    width: 600px;
+    height: 600px;
+  }
+
+  #itemwrap #seven {
+    width: 600px;
+    height: 600px;
+  }
+
+  #itemwrap #eight {
+    width: 600px;
+    height: 600px;
+  }
+
+  #itemwrap #nine {
+    width: 600px;
+    height: 600px;
+  }
+
+  #itemwrap .item {
+    width: 600px;
+  }
+
+  #itemwrap .text {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  #bar li a {
+    margin: 8px 6rem;
+    text-align: center;
+  }
+
+  .hidemenu li a {
+    text-align: center;
+  }
+
+  nav .hidemenu ul {
+    margin: 8px 6rem;
+  }
+}

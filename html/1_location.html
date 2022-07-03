@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOACTION</title>
+    <link rel="stylesheet" href="../css/1_location.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="text/javascript"
+      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=99db2962fdf780a5b4a93b52c2237afb"
+    ></script>
+  </head>
+  <body>
+    <div id="wrap">
+      <header>
+        <div id="header_top">
+          <a href="./0_main.html"><div id="logo"></div></a>
+          <div id="search_group">
+            <div id="search"></div>
+          </div>
+          <div class="hide">
+            <input type="text" placeholder="원하시는 상품을 검색해보세요" />
+          </div>
+        </div>
+        <nav>
+          <div id="bar">
+            <ul>
+              <li><a href="#">ABOUT US</a></li>
+              <li><a href="#">STORE</a></li>
+              <li><a href="#">COMMUNITY</a></li>
+            </ul>
+          </div>
+          <div class="hide_menu">
+            <ul>
+              <li><a href="./1_aboutIt.html">ABOUT IT</a></li>
+            </ul>
+            <ul>
+              <li><a href="./1_salad.html">SALAD</a></li>
+              <li><a href="./2_sandwich.html">SANDWICH</a></li>
+              <li><a href="2_yogurt.html">YOGURT</a></li>
+              <li><a href="2_soup&side.html">SOUP & SIDE</a></li>
+              <li><a href="2_beverage.html">BEVERAGE</a></li>
+              <li><a href="2_custom.html">CUSTOM</a></li>
+            </ul>
+            <ul>
+              <li><a href="1_location.html">LOACTION</a></li>
+              <li><a href="2_contactUs.html">CONTACT US</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <section class="null"></section>
+      <section id="title_section">
+        <div>
+          <p>
+            KEEP YOUR
+            <span>ROUTINE</span>
+          </p>
+          <p>
+            <span>IT SALAD</span>
+            IS HERE
+          </p>
+        </div>
+      </section>
+      <section id="main_section">
+        <aside>
+          <div id="aside_top">
+            <div id="btn_group">
+              <input class="btn" type="button" value="Store Search" />
+              <input class="btn" type="button" value="Local Search" />
+            </div>
+            <div id="store_search">
+              <input type="text" placeholder="매장명/주소입력" />
+              <a href="#"></a>
+            </div>
+            <div id="store_txt">
+              <p>
+                <span>N개</span>
+                의매장이 검색되었습니다
+              </p>
+              <p id="txt2" style="font-family: 'Nanum Gothic', sans-serif;">
+                매장 운영 시간은 매장과 상이할 수 있습니다
+              </p>
+            </div>
+          </div>
+          <div id="aside_bottom">
+            <div class="store_info">
+              <div>
+                <h3>IT Salad 암구정점</h3>
+                <p style="font-family: 'Nanum Gothic', sans-serif;">
+                  서울특별시 강남구 신사동 563-4
+                </p>
+                <hr />
+                <div class="small_font info_text">
+                  <p class="tel">Tel</p>
+                  <p>02-8118-1751</p>
+                </div>
+                <div class="small_font info_text">
+                  <p class="open">Open</p>
+                  <p>11:00 ~ 21:00 (Last Order 20:30)</p>
+                </div>
+              </div>
+            </div>
+            <div class="store_info">
+              <div id="node2">
+                <h3>IT Salad 성수점</h3>
+                <p style="font-family: 'Nanum Gothic', sans-serif;">
+                  서울특별시 성동구 성수일로8길 28
+                </p>
+                <hr />
+                <div class="small_font info_text">
+                  <p class="tel">Tel</p>
+                  <p>02-8118-1751</p>
+                </div>
+                <div class="small_font info_text">
+                  <p class="open">Open</p>
+                  <p>11:00 ~ 21:00 (Last Order 20:30)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+        <div id="map"></div>
+        <div id="instagram"><a href="#"></a></div>
+      </section>
+      <section class="null"></section>
+      <footer>
+        <ul id="footer1">
+          <li>
+            <span>COMPANY</span>
+            IT SALAD
+          </li>
+          <li>
+            <span>OWNER</span>
+            SONG.J.H
+          </li>
+          <li>
+            <span>E-mail</span>
+            aa4281@naver.com
+          </li>
+          <li>
+            <span>CALL</span>
+            Seongsu: 070.8118.1751 | yongsan: 02.2012.1751
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <span>BUSINESS LICENSE</span>
+            Seongsu: 142-85-26752 | Yongsan: 478-85-01330
+          </li>
+        </ul>
+        <ul id="footer2">
+          <li>
+            <span>ADDRESS</span>
+            Seongsu: 28, Seongsuil-ro 8-gil, Seongdong-gu, Seoul, Republic of
+            Korea | Yongsan: 7F, 55, Hangang-daero 23-gil, Yongsan-gu, Seoul,
+            Republic of Korea
+          </li>
+        </ul>
+        <p>
+          Copyright ITSALAD All right reserve / design by MOSEN / Hosting by
+          CAFE24 / Agreement / 개인정보취급방침 / Guide
+        </p>
+      </footer>
+      <script>
+        // 카카오 지도 API 활용
+        let mapContainer = document.getElementById('map'),
+          mapOption = {
+            // 맵에 대한 옵션
+            center: new kakao.maps.LatLng( // 지도에 찍힐 위치
+              37.51997115189316,
+              127.02665384217411,
+            ),
+            level: 3,
+          }
+        let map = new kakao.maps.Map(mapContainer, mapOption) // 사용할 지도
+
+        let positions = [
+          // 인포윈도우에 나올 컨텐츠와 위치를 담는 변수
+          {
+            content: '<span>IT Salad 압구정점</span>',
+            latlng: new kakao.maps.LatLng( // 선택한 지역(위도 경도)
+              37.51997115189316,
+              127.02665384217411,
+            ),
+          },
+          {
+            content: '<span>IT Salad 성수점</span>',
+            latlng: new kakao.maps.LatLng(
+              37.54581624490072,
+              127.05354674088261,
+            ),
+          },
+        ]
+
+        for (let i = 0; i < positions.length; i++) {
+          // 마커를 생성합니다
+          let marker = new kakao.maps.Marker({
+            map: map, // 마커를 표시할 지도
+            position: positions[i].latlng, // 마커의 위치
+          })
+
+          // 인포윈도우를 생성
+          let infowindow = new kakao.maps.InfoWindow({
+            content: positions[i].content, // 인포윈도우에 표시할 내용
+          })
+
+          kakao.maps.event.addListener(
+            // 마커에 마우스 오버가 되었을 때 윈도우 인포를 보여준다
+            marker,
+            'mouseover',
+            makeOverListener(map, marker, infowindow),
+          )
+          kakao.maps.event.addListener(
+            // 마커에서 마우스가 나갔을 때 윈도우 인포 닫음
+            marker,
+            'mouseout',
+            makeOutListener(infowindow),
+          )
+        }
+        function makeOverListener(map, marker, infowindow) {
+          // 인포윈도우를 표시하는 함수
+          return function () {
+            infowindow.open(map, marker)
+          }
+        }
+
+        function makeOutListener(infowindow) {
+          // 인포윈도우를 닫는 함수
+          return function () {
+            infowindow.close()
+          }
+        }
+      </script>
+    </div>
+  </body>
+  <script src="../js/search.js"></script>
+  <script src="../js/hidden_menu.js"></script>
+</html>

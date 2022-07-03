@@ -1,0 +1,106 @@
+body {
+  font: 12px Roboto, Nanum Gothic, Arial, verdana, sans-serif;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-image: url(../sources/etc/배경.png);
+  background-size: 25% 100%;
+  background-repeat: no-repeat;
+}
+
+section {
+  position: relative;
+  margin: 250px 0 50px 0;
+  left: 25%;
+  display: flex;
+}
+/*#img {
+  width: 25%;
+  overflow: hidden;
+  background-image: url(./이미지/custom/배경.png);
+  background-size: cover;
+  background-position: center;
+}*/
+#wrap {
+  width: 75%;
+}
+#wrap div {
+  margin: 20px 30px 50px;
+}
+#title {
+  font-size: 30px;
+  font-weight: bold;
+}
+#base span {
+  font-weight: 700;
+  font-size: 20px;
+}
+/* p {
+  font-weight: 600;
+} */
+#base {
+  line-height: 40px;
+  font-size: 16px;
+}
+#base > ul {
+  display: flex;
+}
+#base > ul > li {
+  margin: 5px 10px 0;
+}
+#base hr {
+  margin-bottom: 10px;
+}
+#topping {
+  line-height: 40px;
+  font-size: 16px;
+}
+#topping > ul {
+  display: flex;
+}
+#topping > ul > li {
+  margin: 5px 15px 0;
+  width: 300px;
+  height: 30px;
+}
+#dreesing {
+  line-height: 40px;
+  font-size: 16px;
+}
+#dreesing hr {
+  margin-bottom: 10px;
+}
+#dreesing > ul {
+  display: flex;
+}
+#dreesing > ul > li {
+  margin: 5px 15px 0;
+  width: 500px;
+  height: 30px;
+}
+#oil {
+  width: 100%;
+}
+.none {
+  visibility: hidden;
+}
+input[type='radio'] {
+  margin-right: 15px;
+  width: 15px;
+  height: 15px;
+}
+input[type='checkbox'] {
+  margin-right: 15px;
+  width: 15px;
+  height: 15px;
+}
+#sum {
+  width: 100%;
+  font-size: 25px;
+  font-weight: 800;
+}
+input[type='text'] {
+  border: none;
+  width: 80px;
+  font-size: 25px;
+  text-align: center;
+}

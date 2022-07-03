@@ -1,0 +1,426 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header,
+section,
+footer {
+  width: 100%;
+}
+
+body {
+  font: 12px Roboto, Nanum Gothic, Arial, verdana, sans-serif;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background-color: white;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+}
+
+#header_top {
+  height: 130px;
+  display: flex;
+  justify-content: center;
+}
+
+#logo {
+  width: 130px;
+  height: 132px;
+  margin-top: 10px;
+  background-image: url(../sources/icon/logo.png);
+  background-size: cover;
+}
+
+@media screen and (min-width: 1890px) and (max-width: 2200px) {
+  .container .img_container {
+    margin-left: 400px;
+  }
+}
+
+@media screen and (max-width: 1480px) {
+  .container .img_container {
+    margin-left: 120px;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .container .img_container {
+    width: 800px;
+    height: 800px;
+    background-size: 800px;
+    margin-left: 0;
+  }
+
+  #img {
+    display: flex;
+    justify-content: center;
+  }
+
+  section {
+    height: 1600px;
+  }
+
+  .container .info_container {
+    float: left;
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .info_box {
+    margin-right: 100px;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  #bar li a {
+    margin: 8px 6rem;
+    text-align: center;
+  }
+
+  .hidemenu li a {
+    text-align: center;
+  }
+
+  nav .hidemenu ul {
+    margin: 8px 6rem;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  #search,
+  #search_text {
+    opacity: 0;
+  }
+
+  #search_group,
+  input[type='text'] {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .container .info_container {
+    float: left;
+    margin-left: 150px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 875px) {
+  #bar ul a {
+    margin: 8px 5rem;
+    text-align: center;
+  }
+
+  .hidemenu li a {
+    text-align: center;
+  }
+
+  nav .hidemenu ul {
+    margin: 8px 5rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  footer {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .footer {
+    opacity: 0;
+  }
+
+  section {
+    height: 1200px;
+  }
+
+  .container .img_container {
+    width: 600px;
+    height: 600px;
+    background-size: 600px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  #bar ul a {
+    margin: 8px 3rem;
+    text-align: center;
+  }
+
+  .hidemenu li a {
+    text-align: center;
+  }
+
+  nav .hidemenu ul {
+    margin: 8px 3rem;
+  }
+
+  .container .info_container {
+    float: left;
+    margin-left: 100px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .container .info_container {
+    float: left;
+    margin-left: 50px;
+  }
+}
+
+@media screen and (max-width: 588px) {
+  #bar ul a {
+    margin: 8px 2rem;
+    text-align: center;
+  }
+
+  .hidemenu li a {
+    text-align: center;
+  }
+
+  hidemenu ul {
+    margin: 8px 2rem;
+  }
+
+  .container .img_container {
+    width: 500px;
+    height: 500px;
+    background-size: 500px;
+  }
+
+  .container .info_container {
+    float: left;
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 491px) {
+  #bar {
+    display: none;
+  }
+}
+
+#search {
+  width: 35px;
+  height: 35px;
+  background-image: url(../sources/icon/search.png);
+  background-size: cover;
+  position: absolute;
+  right: 170px;
+  top: 65px;
+}
+
+.hide {
+  position: absolute;
+  right: 220px;
+  top: 75px;
+  opacity: 0;
+}
+
+#search_text {
+  position: absolute;
+  right: 140px;
+  top: 75px;
+  font-size: 15px;
+}
+
+#search_group {
+  cursor: pointer;
+}
+
+input[type='text'] {
+  width: 200px;
+  height: 25px;
+}
+
+.off {
+  opacity: 1;
+}
+
+#bar ul {
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  background-color: black;
+}
+
+#bar a {
+  color: white;
+  margin: 0 8rem;
+  font-size: 1.3rem;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+.hidemenu {
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  line-height: 25px;
+  height: 0;
+}
+
+.on {
+  height: fit-content;
+  opacity: 1;
+}
+
+.hidemenu ul {
+  margin: 8px 8rem;
+}
+
+.hidemenu ul li {
+  text-align: center;
+}
+
+.hidemenu a {
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+}
+
+section {
+  position: relative;
+  margin-bottom: 350px;
+  top: 300px;
+}
+
+.container {
+  width: 100%;
+  height: 600px;
+  margin-top: 40px;
+}
+
+.info_container {
+  width: 40%;
+  float: right;
+  margin-right: 100px;
+}
+
+.info_container .lineMaker {
+  height: 80px;
+}
+
+.info_box h2,
+.nutrient_box h2 {
+  display: inline-block;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid deeppink;
+}
+
+.info_box .price,
+.info_box .title {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.info_box .base,
+.info_box .toppings,
+.info_box .dressing {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+section .lineMaker {
+  height: 70px;
+}
+
+.category {
+  width: 100%;
+  height: 100px;
+}
+
+.category h2 {
+  font-size: 20px;
+  letter-spacing: 8px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.nutrient_box p {
+  font-size: 16px;
+  letter-spacing: 0.5;
+  margin-bottom: 2px;
+  line-height: 25px;
+}
+
+.img_container {
+  width: 500px;
+  animation-name: ani;
+  height: 500px;
+  margin-left: 200px;
+  margin-top: -70px;
+  animation-iteration-count: infinite;
+  animation-duration: 7s;
+  background-size: 500px;
+  float: left;
+}
+
+#instargram {
+  width: 50px;
+  height: 50px;
+  background-image: url(../sources/icon/instargram.png);
+  background-size: cover;
+  position: fixed;
+  right: 70px;
+  bottom: 100px;
+  cursor: pointer;
+}
+
+#instargram:hover {
+  background-image: url(../sources/icon/instagramhover.png);
+}
+
+#footer {
+  width: 100%;
+  font-size: 10px;
+  text-align: center;
+  line-height: 18px;
+  display: inline-block;
+  margin: 30px 30px;
+  padding: 30px 0;
+}
+
+footer ul li {
+  list-style: none;
+}
+
+#footer2 {
+  display: flex;
+  justify-content: center;
+}
+#footer4 {
+  display: flex;
+  justify-content: center;
+  height: 38px;
+}
+#footer span {
+  font-size: 8px;
+  margin: 0 5px;
+}

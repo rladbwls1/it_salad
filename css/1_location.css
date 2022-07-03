@@ -1,0 +1,305 @@
+/*------------------------------공통 부분 ---------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#wrap,
+header,
+section,
+footer {
+  width: 100%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+#wrap {
+  height: 100vh;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+section {
+  height: 90%;
+}
+
+.small_font {
+  font-size: 14px;
+}
+/*------------------------------Header 부분 시작 ---------------------------------------*/
+header {
+  background-color: white;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+}
+
+#header_top {
+  height: 130px;
+  display: flex;
+  justify-content: center;
+}
+
+#logo {
+  width: 130px;
+  height: 132px;
+  margin-top: 10px;
+  background-image: url(../sources/icon/logo.png);
+  background-size: cover;
+}
+
+#search {
+  width: 40px;
+  height: 40px;
+  background-image: url('../sources/icon/search.png');
+  background-size: cover;
+  position: absolute;
+  right: 170px;
+  top: 65px;
+}
+
+/* 카테고리 영역 */
+#bar ul {
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  background-color: black;
+}
+#bar a {
+  color: white;
+  margin: 0 8rem;
+  font-size: 1.3rem;
+  line-height: 40px;
+}
+.hide_menu {
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  line-height: 25px;
+  height: 0;
+  opacity: 0;
+  transition: all 1s;
+}
+.hide_menu > ul {
+  margin: 8px 8rem;
+}
+.hide_menu > ul > li {
+  text-align: center;
+}
+.hide_menu a {
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+}
+.hide {
+  position: absolute;
+  right: 250px;
+  top: 75px;
+  opacity: 0;
+}
+.hide > input {
+  width: 120%;
+}
+#search_group {
+  cursor: pointer;
+}
+
+.off {
+  opacity: 1;
+}
+.on {
+  height: fit-content;
+  opacity: 1;
+}
+/*------------------------------Section 부분 시작 ---------------------------------------*/
+
+/* 공백 영역  FIXED에 가려지는 부분*/
+.null {
+  height: 24%;
+}
+#title_section {
+  padding: 9px;
+  border: 1px solid rgba(0, 0, 0, 0.9);
+  height: 10%;
+}
+#title_section p {
+  font-weight: 300;
+  font-size: 22px;
+  text-align: center;
+}
+#title_section span {
+  font-weight: 700;
+  margin: 1%;
+}
+#main_section {
+  display: flex;
+}
+
+/*------------------------------Aside 부분 시작 ---------------------------------------*/
+
+aside {
+  font-family: 'Nanum Gothic', sans-serif;
+  width: 30%;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.1);
+}
+#aside_top {
+  margin: -1px;
+  height: 40%;
+  border: 1px solid rgba(0, 0, 0, 0.9);
+  background-color: #fff;
+}
+#aside_bottom {
+  height: 60%;
+}
+#btn_group {
+  width: 100%;
+  display: inline-flex;
+  margin-bottom: 50px;
+}
+.btn {
+  width: 50%;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 100;
+  border: 1px solid rgba(0, 0, 0, 0.9);
+  background-color: rgba(255, 255, 255, 1);
+}
+
+#store_search {
+  width: 80%;
+  height: 15%;
+  border: 1px solid rgba(0, 0, 0, 0.9);
+  border-radius: 15px;
+  padding: 10px;
+  margin-left: 40px;
+}
+#store_search > input {
+  width: 85%;
+  border: 0px;
+  font-size: 15 px;
+  outline: none;
+  float: left;
+}
+
+#store_search > a {
+  width: 10%;
+  height: 140%;
+  margin-top: -5px;
+  float: right;
+  background: url(../sources/icon/search.png);
+  background-size: cover;
+  text-decoration: none;
+}
+
+#store_txt {
+  margin: 40px;
+  text-align: center;
+}
+#store_txt > p {
+  font-weight: 700px;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+#store_txt > #txt2 {
+  font-size: 14px;
+}
+#store_tet > span {
+  color: rgba(0, 0, 0, 0.9);
+}
+.store_info {
+  padding: 10px;
+  width: 95%;
+  height: 40%;
+  background-color: #fff;
+  text-align: start;
+  margin: 25px auto;
+  border-radius: 6px;
+}
+.store_info > div {
+  padding: 10px;
+}
+.store_info > div > h3 {
+  padding-bottom: 10px;
+}
+.store_info > div > hr {
+  margin: 5px 0;
+}
+.info_text > p {
+  display: inline;
+}
+.tel {
+  padding-right: 25px;
+}
+.open {
+  padding-right: 5px;
+}
+/*------------------------------MAP 부분 시작 ---------------------------------------*/
+
+#map {
+  height: 100%;
+  width: 100%;
+}
+#map p {
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  margin: 25%;
+}
+
+#instagram {
+  z-index: 1;
+  width: 50px;
+  height: 50px;
+  background-image: url(../sources/icon/instargram.png);
+  background-size: cover;
+  position: fixed;
+  right: 60px;
+  bottom: 55px;
+  cursor: pointer;
+}
+#instagram:hover {
+  background-image: url(../sources/icon/instagramhover.png);
+}
+
+/*------------------------------Footer 부분 시작 ---------------------------------------*/
+footer {
+  font-size: 10px;
+  text-align: center;
+  line-height: 18px;
+  display: inline-block;
+  margin: 0 10px 0;
+}
+#footer1 {
+  display: flex;
+  justify-content: center;
+}
+#footer2 {
+  display: flex;
+  justify-content: center;
+  height: 38px;
+}
+footer span {
+  font-size: 8px;
+  margin: 0 5px;
+}
+
+/* marker 이벤트 */
+.mark_eve {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  text-align: center;
+  height: 24px;
+  line-height: 22px;
+  border-radius: 4px;
+  padding: 0px 10px;
+  display: block;
+  border: none;
+}
